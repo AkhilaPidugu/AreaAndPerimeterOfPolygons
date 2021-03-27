@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RectangleTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2021-03-27T04:12:24" hostname="LAPTOP-R7BQ02TU" time="0.055">
+<testsuite name="RectangleTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2021-03-27T04:50:43" hostname="LAPTOP-R7BQ02TU" time="0.074">
   <properties/>
-  <testcase name="TestAreaOfRectangleWhenBreadthIsZero()" classname="RectangleTest" time="0.029"/>
-  <testcase name="TestAreaOfRectangleWhenLengthIsNegative()" classname="RectangleTest" time="0.001"/>
-  <testcase name="TestPerimeterOfRectangleWhenLengthIsNegative()" classname="RectangleTest" time="0.001"/>
-  <testcase name="TestAreaOfRectangleWhenBreadthIsNegative()" classname="RectangleTest" time="0.001"/>
+  <testcase name="TestAreaOfRectangleWhenBreadthIsZero()" classname="RectangleTest" time="0.028"/>
+  <testcase name="TestAreaOfSquareWhenDimensionIsPositive()" classname="RectangleTest" time="0.001"/>
+  <testcase name="TestAreaOfSquareWhenDimensionIsNegative()" classname="RectangleTest" time="0.001"/>
+  <testcase name="TestAreaOfRectangleWhenLengthIsNegative()" classname="RectangleTest" time="0.002"/>
+  <testcase name="TestPerimeterOfRectangleWhenLengthIsNegative()" classname="RectangleTest" time="0.002"/>
+  <testcase name="TestAreaOfRectangleWhenBreadthIsNegative()" classname="RectangleTest" time="0.005"/>
   <testcase name="TestPerimeterOfRectangleWhenBreadthIsNegative()" classname="RectangleTest" time="0.002"/>
-  <testcase name="TestPerimeterOfRectangleWhenBreadthIsZero()" classname="RectangleTest" time="0.001"/>
-  <testcase name="TestAreaOfRectangleWhenBothDimensionsAreZero()" classname="RectangleTest" time="0.002"/>
-  <testcase name="TestPerimeterOfRectangleWhenBothAreZero()" classname="RectangleTest" time="0.001"/>
-  <testcase name="TestAreaOfRectangleWhenLengthIsZero()" classname="RectangleTest" time="0.001"/>
-  <testcase name="TestAreaOfRectangleWhenBothDimensionsArePositive()" classname="RectangleTest" time="0.001"/>
+  <testcase name="TestPerimeterOfRectangleWhenBreadthIsZero()" classname="RectangleTest" time="0.002"/>
+  <testcase name="TestAreaOfSquareWhenDimensionIsZero()" classname="RectangleTest" time="0.002"/>
+  <testcase name="TestPerimeterOfRectangleWhenBothAreZero()" classname="RectangleTest" time="0.002"/>
+  <testcase name="TestAreaOfRectangleWhenLengthIsZero()" classname="RectangleTest" time="0.002"/>
+  <testcase name="TestAreaOfRectangleWhenBothDimensionsArePositive()" classname="RectangleTest" time="0.0"/>
   <testcase name="TestPerimeterOfRectangleWhenBothDimensionsArePositive()" classname="RectangleTest" time="0.001"/>
   <testcase name="TestPerimeterOfRectangleWhenLengthIsZero()" classname="RectangleTest" time="0.001"/>
-  <testcase name="TestAreaOfRectangleWhenBothDimensionsAreNegative()" classname="RectangleTest" time="0.002"/>
-  <testcase name="TestPerimeterOfRectangleWhenBothDimensionsAreNegative()" classname="RectangleTest" time="0.002"/>
+  <testcase name="TestAreaOfRectangleWhenBothDimensionsAreNegative()" classname="RectangleTest" time="0.001"/>
+  <testcase name="TestPerimeterOfRectangleWhenBothDimensionsAreNegative()" classname="RectangleTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

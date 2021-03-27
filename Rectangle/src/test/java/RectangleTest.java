@@ -35,15 +35,6 @@ public class RectangleTest {
         assertEquals(expectedMessage,exception.getMessage());
     }
 
-    @Test
-    void TestAreaOfRectangleWhenBothDimensionsAreZero() {
-        int length=0;
-        int breadth=0;
-        String expectedMessage="Length and Breadth of the Rectangle cannot be Zero";
-        Rectangle rectangle = new Rectangle(length,breadth);
-        Throwable exception = Assertions.assertThrows(RuntimeException.class, rectangle::areaOfRectangle);
-        assertEquals(expectedMessage,exception.getMessage());
-    }
 
     @Test
     void TestAreaOfRectangleWhenLengthIsNegative() {
@@ -144,4 +135,32 @@ public class RectangleTest {
         Throwable exception = Assertions.assertThrows(RuntimeException.class, rectangle::perimeterOfRectangle);
         assertEquals(expectedMessage,exception.getMessage());
     }
+
+    @Test
+    void TestAreaOfSquareWhenDimensionIsPositive() {
+        int side=5;
+        int expectedArea=25;
+        Rectangle square=new Rectangle(side);
+        int actualArea = square.areaOfRectangle();
+        assertEquals(expectedArea,actualArea);
+    }
+
+    @Test
+    void TestAreaOfSquareWhenDimensionIsZero() {
+        int side=0;
+        String expectedMessage="Side of a Square cannot be Zero";
+        Rectangle square = new Rectangle(side);
+        Throwable exception = Assertions.assertThrows(RuntimeException.class, square::areaOfRectangle);
+        assertEquals(expectedMessage,exception.getMessage());
+    }
+
+    @Test
+    void TestAreaOfSquareWhenDimensionIsNegative() {
+        int side=-3;
+        String expectedMessage="Side of a Square cannot be Negative Value";
+        Rectangle square = new Rectangle(side);
+        Throwable exception = Assertions.assertThrows(RuntimeException.class, square::areaOfRectangle);
+        assertEquals(expectedMessage,exception.getMessage());
+    }
+
 }
