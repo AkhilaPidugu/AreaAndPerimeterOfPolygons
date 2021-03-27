@@ -36,6 +36,10 @@ public class Rectangle {
         return 2*(length+breadth);
     }
 
-
+    public int perimeterOfSquare() {
+        if(length < 0){ throw new RuntimeException("Side of a Square cannot be Negative Value"); }
+        else if(length == 0){ throw new RuntimeException("Side of a Square cannot be Zero");}
+        return 4*length;
+    }
 
 }

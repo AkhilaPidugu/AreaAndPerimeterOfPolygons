@@ -163,4 +163,30 @@ public class RectangleTest {
         assertEquals(expectedMessage,exception.getMessage());
     }
 
+    @Test
+    void TestPerimeterOfSquareWhenDimensionIsPositive() {
+        int side=3;
+        int expectedPerimeter=12;
+        Rectangle square=new Rectangle(side);
+        int actualArea = square.perimeterOfSquare();
+        assertEquals(expectedPerimeter,actualArea);
+    }
+
+    @Test
+    void TestPerimeterOfSquareWhenDimensionIsZero() {
+        int side=0;
+        String expectedMessage="Side of a Square cannot be Zero";
+        Rectangle square = new Rectangle(side);
+        Throwable exception = Assertions.assertThrows(RuntimeException.class, square::perimeterOfSquare);
+        assertEquals(expectedMessage,exception.getMessage());
+    }
+
+    @Test
+    void TestPerimeterOfSquareWhenDimensionIsNegative() {
+        int side=-4;
+        String expectedMessage="Side of a Square cannot be Negative Value";
+        Rectangle square = new Rectangle(side);
+        Throwable exception = Assertions.assertThrows(RuntimeException.class, square::perimeterOfSquare);
+        assertEquals(expectedMessage,exception.getMessage());
+    }
 }
